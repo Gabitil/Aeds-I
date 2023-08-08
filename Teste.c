@@ -1,3 +1,8 @@
+/*
+ Autor: Gabriel Augusto de Lima Maia
+ Data: 07/08/2023
+*/
+
 #include <stdio.h>
 
 

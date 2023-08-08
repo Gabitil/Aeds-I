@@ -1,6 +1,11 @@
+/*
+ Autor: Gabriel Augusto de Lima Maia
+ Data: 07/08/2023
+*/
+
 #include <stdio.h>
 
-int mult(int base, int exp){
+long double mult(long double base,long double exp){
     if(exp == 0){
         return 1;
     } else{
@@ -9,9 +14,9 @@ int mult(int base, int exp){
 }
 
 int main(){
-    int base, exp;
+    long double base, exp;
 
     printf("Digite a base e o expoente inteiros: ");
-    scanf("%d %d", &base, &exp);
-    printf("Resultado: %d", mult(base, exp));
+    scanf("%Lf %Lf", &base, &exp);
+    printf("Resultado: %.Lf", mult(base, exp));
 }
