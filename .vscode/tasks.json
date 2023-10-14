@@ -1,0 +1,58 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cmake",
+			"label": "CMake: configurar",
+			"command": "configure",
+			"problemMatcher": [],
+			"detail": "Tarefa do modelo CMake configurar",
+			"group": "build"
+		},
+		{
+			"type": "cmake",
+			"label": "CMake: instalar",
+			"command": "install",
+			"problemMatcher": [],
+			"detail": "Tarefa do modelo CMake instalar",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "cmake",
+			"label": "CMake: build",
+			"command": "build",
+			"targets": [
+				"[N/A - Selecionar Kit]"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "Tarefa do modelo CMake build"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc build active file",
+			"command": "C:/TDM-GCC-64/bin",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}",
+				"-lm"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:/TDM-GCC-64/bin"
+		}
+	]
+}

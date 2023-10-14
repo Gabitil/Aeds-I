@@ -1,20 +1,15 @@
-/*
- Autor: Gabriel Augusto de Lima Maia
- Data: 07/08/2023
-*/
-
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
+int main() {
+    // Inicializa a semente para a função rand() com o tempo atual
+    srand(time(0));
 
-int main(){
+    // Gera um número aleatório entre 0 e 100
+    int numero = rand() % 101;
 
-    int num1, num2, soma;
+    printf("Número aleatório entre 0 e 100: %d\n", numero);
 
-    printf("Digite os dois numeros: ");
-    scanf("%d %d", &num1, &num2);
-
-    soma = num1 + num2;
-
-    printf("Resultado = %d", soma);
-
+    return 0;
 }
